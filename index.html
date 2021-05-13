@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes Matematicas</title>
+</head>
+<body>
+    <h1>Funções Matemáticas</h1>
+    <h2>Digite os números e escolha a operação matemática</h2>
+    <form>
+        <label for="num1">Digite um número:</label>
+        <input id="num1"><br><br>
+        <label for="num2">Digite outro número:</label>
+        <input id="num2"><br><br>
+        <label for="resultado">Resultado:</label>
+        <input id="resultado"><br><br>
+        <button onclick="soma(event)">Somar</button><br><br>
+        <button onclick="subtrair">Subtrair</button><br><br>
+        <button onclick="multiplicar(event)">Multiplicar</button><br><br>
+        <button onclick="dividir">Dividir</button><br><br>    
+    </form>
+    <script type="text/javascript">
+        function multiplicar(event){
+            event.preventDefault();
+            var valorNum1 = document.getElementById("num1").value;
+            var valorNum2 = document.getElementById("num2").value;
+            var multiplica = (valorNum1 * valorNum2);
+            var resultado = multiplica;
+            document.getElementById("resultado").value = resultado;
+            
+        }
+
+    </script>
+
+</body>
+</html>
