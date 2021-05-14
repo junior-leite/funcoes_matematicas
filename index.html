@@ -5,6 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcoes Matematicas</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: verdana;
+            font-size: 70px;
+        }
+        h2{
+            font-size: 30px;
+            color: rgba(255, 0, 106, 0.959);
+        }
+        label{
+            font-size: 25px;
+            color: black;
+            margin-left: -250px;
+        }       
+        input{
+            border-radius: 0%;
+            border-color: black;
+            font-size: 20px;
+            position: absolute;
+            text-align: center;
+            font-family: verdana;
+            color: black;
+
+        }
+        button{
+            color: #ffffff;
+            background-color: #1672af;
+            font-size: 30px;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 20%;
+        }
+        body{
+            background-color:#C7C4C4;
+            text-align: center;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>Operações Matemáticas</h1>
@@ -15,11 +54,12 @@
         <label for="num2">Digite outro número:</label>
         <input type="number" id="num2"><br><br>
         <label for="resultado">Resultado:</label>
-        <input id="resultado"><br><br>
-        <button onclick="somar(event)">Somar</button><br><br>
-        <button onclick="subtrair(event)">Subtrair</button><br><br>
-        <button onclick="multiplicar(event)">Multiplicar</button><br><br>
-        <button onclick="dividir(event)">Dividir</button><br><br>    
+        <input id="resultado" disabled><br><br>
+        <button onclick="somar(event)">Somar</button>
+        <button onclick="subtrair(event)">Subtrair</button>
+        <button onclick="multiplicar(event)">Multiplicar</button>
+        <button onclick="dividir(event)">Dividir</button> 
+        <button onclick="limpar(event)">Limpar</button> 
     </form>
     <script type="text/javascript">
         function somar(event){
@@ -27,7 +67,6 @@
             var valorNum1 = document.getElementById("num1").value;
             var valorNum2 = document.getElementById("num2").value;
             var resultado = parseInt(valorNum1) + parseInt(valorNum2);
-            //var resultado = soma
             document.getElementById("resultado").value = resultado; 
         }
         function subtrair(event){
@@ -35,7 +74,6 @@
             var valorNum1 = document.getElementById("num1").value;
             var valorNum2 = document.getElementById("num2").value;
             var resultado = parseInt(valorNum1) - parseInt(valorNum2);
-            //var resultado = subtrai;
             document.getElementById("resultado").value = resultado;
         }
         function multiplicar(event){
@@ -43,7 +81,6 @@
             var valorNum1 = document.getElementById("num1").value;
             var valorNum2 = document.getElementById("num2").value;
             var resultado = (valorNum1 * valorNum2);
-            //var resultado = multiplica;
             document.getElementById("resultado").value = resultado; 
         }
         function dividir(event){
@@ -51,11 +88,16 @@
             var valorNum1 = document.getElementById("num1").value;
             var valorNum2 = document.getElementById("num2").value;
             var resultado = (valorNum1 / valorNum2);
-            //var resultado = divide;
             document.getElementById("resultado").value = resultado; 
         }
-        
-    </script>
+        /*Limpando o campo input para usuário digitar novamente*/
+        function limpar(event){
+            event.preventDefault();
+            document.getElementById("num1").value ='';
+            document.getElementById("num2").value ='';
+            document.getElementById("resultado").value ='';
+        }
 
+    </script>
 </body>
 </html>
