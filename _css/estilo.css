@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+    font-family: verdana;
+    font-size: 70px;
+}
+h2{
+    font-size: 30px;
+    color: rgba(255, 0, 106, 0.959);
+}
+/*label{
+    font-size: 25px;
+    color: black;
+    margin-left: -250px;
+}*/  
+
+.num1{
+    margin-left: -280px;
+    font-size: 25px;
+    color: black;
+}
+.num2{
+    margin-left: -260px;
+    font-size: 25px;
+    color: black;
+}
+.num3{
+    margin-left: -360px;
+    font-size: 25px;
+    color: black;
+}
+input{
+    border-radius: 0%;
+    border-color: black;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    font-family: verdana;
+    font-weight: bold;
+    color: black;
+}
+button{
+    color: #ffffff;
+    background-color: #1672af;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20%;
+}
+body{
+    background-color:#C7C4C4;
+    text-align: center;
+}

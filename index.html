@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilo.css"/>
     <title>Funcoes Matematicas</title>
     <style>
-        h1{
+        /*h1{
             text-align: center;
             font-family: verdana;
             font-size: 70px;
@@ -42,23 +43,21 @@
         body{
             background-color:#C7C4C4;
             text-align: center;
-        }
+        }*/
         
     </style>
 </head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
 <body>
     <h1>Operações Matemáticas</h1>
     <h2>Digite os números e escolha a operação matemática</h2>
     <form>
-        <section>
-            <label for="num1">Digite um número:</label>
-            <input type="number" id="num1"><br><br>
-            <label for="num2">Digite outro número:</label>
-            <input type="number" id="num2"><br><br>
-            <label for="resultado">Resultado:</label>
-            <input id="resultado" disabled><br><br>
-        </section>
-        
+        <label class="num1" for="num1">Digite um número:</label>
+        <input type="number" id="num1"><br><br>
+        <label class="num2" for="num2">Digite outro número:</label>
+        <input type="number" id="num2"><br><br>
+        <label class="num3" for="resultado">Resultado:</label>
+        <input id="resultado" disabled><br><br>
         <button onclick="somar(event)">Somar</button>
         <button onclick="subtrair(event)">Subtrair</button>
         <button onclick="multiplicar(event)">Multiplicar</button>
@@ -66,7 +65,7 @@
         <button onclick="limpar(event)">Limpar</button> 
     </form>
     <script type="text/javascript">
-        function somar(event){
+        /*function somar(event){
             event.preventDefault();
             var valorNum1 = document.getElementById("num1").value;
             var valorNum2 = document.getElementById("num2").value;
@@ -94,13 +93,13 @@
             var resultado = (valorNum1 / valorNum2);
             document.getElementById("resultado").value = resultado; 
         }
-        /*Limpando o campo input para usuário digitar novamente*/
+        Limpando o campo input para usuário digitar novamente
         function limpar(event){
             event.preventDefault();
             document.getElementById("num1").value ='';
             document.getElementById("num2").value ='';
             document.getElementById("resultado").value ='';
-        }
+        }*/
 
     </script>
 </body>
