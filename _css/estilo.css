@@ -28,6 +28,11 @@ h2{
     font-size: 25px;
     color: black;
 }
+input:hover{
+    background-color: #dddddd;    
+    
+    
+}
 input{
     border-radius: 0%;
     border-color: black;

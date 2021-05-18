@@ -53,11 +53,11 @@
     <h2>Digite os números e escolha a operação matemática</h2>
     <form>
         <label class="num1" for="num1">Digite um número:</label>
-        <input type="number" id="num1"><br><br>
+        <input type="number" id="num1" min="0" max="9999"><br><br>
         <label class="num2" for="num2">Digite outro número:</label>
-        <input type="number" id="num2"><br><br>
+        <input type="number" id="num2" min="0" max="9999"><br><br>
         <label class="num3" for="resultado">Resultado:</label>
-        <input id="resultado" disabled><br><br>
+        <input type="number" id="resultado" min="0" max="9999" disabled><br><br>
         <button onclick="somar(event)">Somar</button>
         <button onclick="subtrair(event)">Subtrair</button>
         <button onclick="multiplicar(event)">Multiplicar</button>
