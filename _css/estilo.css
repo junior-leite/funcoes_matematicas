@@ -1,37 +1,51 @@
+#site{
+    width: 1500px;
+    height: 1000px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    background-color: #6666;
+}
+#header{
+    width: 1500px;
+    height: 100px;
+    background-color: #00f;
+}
 h1{
     text-align: center;
     font-family: verdana;
     font-size: 70px;
+    margin-top: 0px;
 }
 h2{
-    font-size: 30px;
-    color: rgba(255, 0, 106, 0.959);
+    font-size: 20px;
+    color: #BD0505;
+    font-weight: bolder;
+    
 }
-/*label{
-    font-size: 25px;
-    color: black;
-    margin-left: -250px;
-}*/  
 
 .num1{
-    margin-left: -280px;
-    font-size: 25px;
+    margin-left: -300px;
+    font-size: 20px;
+    font-weight: bold;
     color: black;
 }
 .num2{
-    margin-left: -260px;
-    font-size: 25px;
+    margin-left: -275px;
+    font-size: 20px;
+    font-weight: bold;
     color: black;
 }
 .num3{
-    margin-left: -360px;
-    font-size: 25px;
+    margin-left: -390px;
+    font-size: 20px;
+    font-weight: bold;
     color: black;
 }
+
 input:hover{
-    background-color: #dddddd;    
-    
-    
+    background-color: #dddddd;       
 }
 input{
     border-radius: 0%;
@@ -43,15 +57,24 @@ input{
     font-weight: bold;
     color: black;
 }
+
 button{
     color: #ffffff;
     background-color: #1672af;
-    font-size: 30px;
-    padding: 20px;
-    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
     border-radius: 20%;
 }
+fieldset{
+    font-size: 20px;
+    color: #057D72;
+    font:bold;
+    font-family: verdana;
+    margin-top: 20px;
+}
+
 body{
-    background-color:#C7C4C4;
+    /*background-color:#C7C4C4;*/
     text-align: center;
 }

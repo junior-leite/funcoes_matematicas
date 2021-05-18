@@ -6,101 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/estilo.css"/>
     <title>Funcoes Matematicas</title>
-    <style>
-        /*h1{
-            text-align: center;
-            font-family: verdana;
-            font-size: 70px;
-        }
-        h2{
-            font-size: 30px;
-            color: rgba(255, 0, 106, 0.959);
-        }
-        label{
-            font-size: 25px;
-            color: black;
-            margin-left: -250px;
-        }  
-            
-        input{
-            border-radius: 0%;
-            border-color: black;
-            font-size: 20px;
-            position: absolute;
-            text-align: center;
-            font-family: verdana;
-            font-weight: bold;
-            color: black;
-        }
-        button{
-            color: #ffffff;
-            background-color: #1672af;
-            font-size: 30px;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 20%;
-        }
-        body{
-            background-color:#C7C4C4;
-            text-align: center;
-        }*/
-        
-    </style>
+    
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
 <body>
-    <h1>Operações Matemáticas</h1>
-    <h2>Digite os números e escolha a operação matemática</h2>
-    <form>
-        <label class="num1" for="num1">Digite um número:</label>
-        <input type="number" id="num1" min="0" max="9999"><br><br>
-        <label class="num2" for="num2">Digite outro número:</label>
-        <input type="number" id="num2" min="0" max="9999"><br><br>
-        <label class="num3" for="resultado">Resultado:</label>
-        <input type="number" id="resultado" min="0" max="9999" disabled><br><br>
-        <button onclick="somar(event)">Somar</button>
-        <button onclick="subtrair(event)">Subtrair</button>
-        <button onclick="multiplicar(event)">Multiplicar</button>
-        <button onclick="dividir(event)">Dividir</button> 
-        <button onclick="limpar(event)">Limpar</button> 
-    </form>
-    <script type="text/javascript">
-        /*function somar(event){
-            event.preventDefault();
-            var valorNum1 = document.getElementById("num1").value;
-            var valorNum2 = document.getElementById("num2").value;
-            var resultado = parseInt(valorNum1) + parseInt(valorNum2);
-            document.getElementById("resultado").value = resultado; 
-        }
-        function subtrair(event){
-            event.preventDefault();
-            var valorNum1 = document.getElementById("num1").value;
-            var valorNum2 = document.getElementById("num2").value;
-            var resultado = parseInt(valorNum1) - parseInt(valorNum2);
-            document.getElementById("resultado").value = resultado;
-        }
-        function multiplicar(event){
-            event.preventDefault();
-            var valorNum1 = document.getElementById("num1").value;
-            var valorNum2 = document.getElementById("num2").value;
-            var resultado = (valorNum1 * valorNum2);
-            document.getElementById("resultado").value = resultado; 
-        }
-        function dividir(event){
-            event.preventDefault();
-            var valorNum1 = document.getElementById("num1").value;
-            var valorNum2 = document.getElementById("num2").value;
-            var resultado = (valorNum1 / valorNum2);
-            document.getElementById("resultado").value = resultado; 
-        }
-        Limpando o campo input para usuário digitar novamente
-        function limpar(event){
-            event.preventDefault();
-            document.getElementById("num1").value ='';
-            document.getElementById("num2").value ='';
-            document.getElementById("resultado").value ='';
-        }*/
+    <div id="site">
+        <div id="header">
+            <h1>Operações Matemáticas</h1>
+            
+        </div>
+        <div id="conteudo">
+            <article>
+                <form>
+                    <fieldset id="operacoes_basicas" style="width: 45%;"><legend style="font-weight: bold;">OPERAÇÕES BÁSICAS</legend>
+                        <label class="num1" for="num1">Digite um número:</label>
+                        <input type="number" id="num1" min="0" max="9999"><br><br>
+                        <label class="num2" for="num2">Digite outro número:</label>
+                        <input type="number" id="num2" min="0" max="9999"><br><br>
+                        <label class="num3" for="resultado">Resultado:</label>
+                        <input type="number" id="resultado" min="0" max="9999" disabled><br>
+                        <h2>Escolha a operação desejada</h2>
+                        <button onclick="somar(event)">Somar</button>
+                        <button onclick="subtrair(event)">Subtrair</button>
+                        <button onclick="multiplicar(event)">Multiplicar</button>
+                        <button onclick="dividir(event)">Dividir</button> 
+                        <button onclick="limpar(event)">Limpar</button> 
+                    </fieldset>
+                </form>
+            </article>
+        </div>
+        <div id="footer">
 
-    </script>
+        </div>
+    </div>
 </body>
 </html>
