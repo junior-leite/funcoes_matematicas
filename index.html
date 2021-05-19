@@ -16,24 +16,26 @@
             
         </div>
         <div id="conteudo">
-            <article>
+            <div id="conteudo-left">
                 <form>
-                    <fieldset id="operacoes_basicas" style="width: 45%;"><legend style="font-weight: bold;">OPERAÇÕES BÁSICAS</legend>
-                        <label class="num1" for="num1">Digite um número:</label>
-                        <input type="number" id="num1" min="0" max="9999"><br><br>
-                        <label class="num2" for="num2">Digite outro número:</label>
-                        <input type="number" id="num2" min="0" max="9999"><br><br>
-                        <label class="num3" for="resultado">Resultado:</label>
-                        <input type="number" id="resultado" min="0" max="9999" disabled><br>
-                        <h2>Escolha a operação desejada</h2>
-                        <button onclick="somar(event)">Somar</button>
-                        <button onclick="subtrair(event)">Subtrair</button>
-                        <button onclick="multiplicar(event)">Multiplicar</button>
-                        <button onclick="dividir(event)">Dividir</button> 
-                        <button onclick="limpar(event)">Limpar</button> 
-                    </fieldset>
+                    <h3>OPERAÇÕES BÁSICAS</h3>
+                    <label class="num1" for="num1">Digite um número:</label>
+                    <input type="number" id="num1" min="0" max="9999"><br><br>
+                    <label class="num2" for="num2">Digite outro número:</label>
+                    <input type="number" id="num2" min="0" max="9999"><br><br>
+                    <label class="num3" for="resultado">Resultado:</label>
+                    <input type="number" id="resultado" min="0" max="9999" disabled><br>
+                    <h2>Escolha a operação desejada</h2>
+                    <button onclick="somar(event)">Somar</button>
+                    <button onclick="subtrair(event)">Subtrair</button>
+                    <button onclick="multiplicar(event)">Multiplicar</button>
+                    <button onclick="dividir(event)">Dividir</button> 
+                    <button class="limpar" onclick="limpar(event)">Limpar</button> 
                 </form>
-            </article>
+            </div> 
+            <div id="conteudo-right">
+
+            </div>   
         </div>
         <div id="footer">
 
