@@ -17,23 +17,34 @@
         </div>
         <div id="conteudo">
             <div id="conteudo-left">
-                <form>
-                    <h3>OPERAÇÕES BÁSICAS</h3>
-                    <label class="num1" for="num1">Digite um número:</label>
-                    <input type="number" id="num1" min="0" max="9999"><br><br>
-                    <label class="num2" for="num2">Digite outro número:</label>
-                    <input type="number" id="num2" min="0" max="9999"><br><br>
-                    <label class="num3" for="resultado">Resultado:</label>
-                    <input type="number" id="resultado" min="0" max="9999" disabled><br>
-                    <h2>Escolha a operação desejada</h2>
-                    <button onclick="somar(event)">Somar</button>
-                    <button onclick="subtrair(event)">Subtrair</button>
-                    <button onclick="multiplicar(event)">Multiplicar</button>
-                    <button onclick="dividir(event)">Dividir</button> 
-                    <button class="limpar" onclick="limpar(event)">Limpar</button> 
-                </form>
+                <h3>Operações Básicas</h3>
+                <label class="num1" for="num1">Digite um número:</label>
+                <input type="number" id="num1" min="0" max="9999"><br><br>
+                <label class="num2" for="num2">Digite outro número:</label>
+                <input type="number" id="num2" min="0" max="9999"><br><br>
+                <label class="num3" for="resultado">Resultado:</label>
+                <input type="number" id="resultado" min="0" max="9999" disabled><br>
+                <h2>Escolha a operação desejada</h2>
+                <button onclick="somar(event)">Somar</button>
+                <button onclick="subtrair(event)">Subtrair</button>
+                <button onclick="multiplicar(event)">Multiplicar</button>
+                <button onclick="dividir(event)">Dividir</button> 
+                <button class="limpar" onclick="limpar(event)">Limpar</button> 
             </div> 
             <div id="conteudo-right">
+                <br><h3>Calculando a Área Total</h3>
+                <div id="calculandoArea">
+                    <label class="num4" for="num4">Digite o comprimento:</label>
+                    <input type="number" id="num4" min="0" max="9999"><br><br>
+                    <label class="num5" for="num5">Digite a largura:</label>
+                    <input type="number" id="num5" min="0" max="9999"><br><br>
+                    <label class="num6" for="area">Área Total:</label>
+                    <input type="number" id="area" min="0" max="9999" disabled><br><br>
+                    <button onclick="calcule(event)">Calcule</button>
+                    <button class="novoCalculo" onclick="novoCalculo(event)">Novo Cálculo</button>
+                </div>
+
+
 
             </div>   
         </div>
