@@ -35,6 +35,31 @@ function calcule(event){
     var areaTotal = (comp * larg);
     document.getElementById("area").value = areaTotal.toFixed(2);
 }
+/*Funções Outros Cálculos*/
+function raiz(event){
+    event.preventDefault();
+    var Num7 = document.getElementById("num7").value;
+    var raiz = Math.sqrt(Num7);
+    document.getElementById("calculo").value = raiz;
+}
+function seno(event){
+    event.preventDefault();
+    var Num7 = document.getElementById("num7").value;
+    var seno = Math.sin(Num7);
+    document.getElementById("calculo").value = seno;
+}
+function cosseno(event){
+    event.preventDefault();
+    var Num7 = document.getElementById("num7").value;
+    var cosseno = Math.cos(Num7);
+    document.getElementById("calculo").value = cosseno;
+}
+function tangente(event){
+    event.preventDefault();
+    var Num7 = document.getElementById("num7").value;
+    var tangente = Math.tan(Num7);
+    document.getElementById("calculo").value = tangente;
+}
 /*Limpando o campo input para usuário digitar novamente*/
 function limpar(event){
     event.preventDefault();
@@ -47,4 +72,9 @@ function novoCalculo(event){
     document.getElementById("num4").value ='';
     document.getElementById("num5").value = '';
     document.getElementById("area").value ='';
+}
+function novo(event){
+    event.preventDefault();
+    document.getElementById("num7").value ='';
+    document.getElementById("calculo").value ='';
 }
