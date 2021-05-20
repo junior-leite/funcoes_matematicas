@@ -26,7 +26,7 @@
 
 #conteudo-right{
     width: 500px;
-    height: 300px;
+    height: 250px;
     float: left;
     background-color: #BFC9CA;
 }
@@ -99,6 +99,31 @@ h2{
     color: black;
     text-align: center;
 }
+.num9{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.num10{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.num11{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.triangulo{
+    margin-left: -80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
 
 input:hover{
     background-color: #AAB7B8;       
@@ -131,6 +156,10 @@ button{
 }
 .novo{
     background-color:#145A32;
+}
+.calcularOutro{
+    background-color:#145A32;
+    
 }
 
 body{

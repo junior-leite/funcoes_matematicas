@@ -30,7 +30,7 @@
                 <button onclick="dividir(event)">Dividir</button> 
                 <button class="limpar" onclick="limpar(event)">Limpar</button><br><br><br>
                 
-                <h2>Outros Cálculos</h2>  
+                <h2>Calculando Raiz Quadrada, Seno, Cosseno e Tangente</h2>  
                 <label class="num7" for="num7">Digite um número:</label>
                 <input type="number" id="num7" min="0" max="9999"><br><br>
                 <label class="num8" for="calculo">Cálculo:</label>
@@ -39,24 +39,34 @@
                 <button onclick="seno(event)">Seno</button>
                 <button onclick="cosseno(event)">Cosseno</button>
                 <button onclick="tangente(event)">Tangente</button>
-                <button class="novo" onclick="novo(event)">Novo</button>
-                    
+                <button class="novo" onclick="novo(event)">Novo</button>      
             </div> 
             <div id="conteudo-right">
                 <br><h2>Calculando a Área Total</h2>
-                <div id="calculandoArea">
-                    <label class="num4" for="num4">Digite o comprimento:</label>
-                    <input type="number" id="num4" min="0" max="9999"><br><br>
-                    <label class="num5" for="num5">Digite a largura:</label>
-                    <input type="number" id="num5" min="0" max="9999"><br><br>
-                    <label class="num6" for="area">Área Total:</label>
-                    <input type="number" id="area" min="0" max="99999" disabled><br><br>
-                    <button onclick="calcule(event)">Calcule</button>
-                    <button class="novoCalculo" onclick="novoCalculo(event)">Novo Cálculo</button>
-                </div>
+                <label class="num4" for="num4">Digite o comprimento:</label>
+                <input type="number" id="num4" min="0" max="9999"><br><br>
+                <label class="num5" for="num5">Digite a largura:</label>
+                <input type="number" id="num5" min="0" max="9999"><br><br>
+                <label class="num6" for="area">Área Total:</label>
+                <input type="number" id="area" min="0" max="99999" disabled><br><br>
+                <button onclick="calcule(event)">Calcule</button>
+                <button class="novoCalculo" onclick="novoCalculo(event)">Novo Cálculo</button><br><br>                   
+                
+                <h2>Analisando Triângulo</h2>
+                <label class="num9" for="num9">Digite o 1° segmento:</label>
+                <input type="number" id="num9" min="0" max="99"><br><br>
+                <label class="num10" for="num10">Digite o 2° segmento:</label>
+                <input type="number" id="num10" min="0" max="99"><br><br>
+                <label class="num11" for="num11">Digite o 3° segmento:</label>
+                <input type="number" id="num11" min="0" max="99"><br><br>
+                <label class="triangulo" for="triangulo">Triângulo:</label>
+                <input type="text" id="triangulo" size="12" maxlength="15" disabled><br>
+                <button onclick="calcular(event)">Calcular</button>
+                <button class="calcularOutro" onclick="calcularOutro(event)">Calcular Outro</button><br><br>
+
             </div> 
-            <br>
-                    </div>
+            
+        </div>
         <div id="footer">
 
         </div>
