@@ -19,10 +19,11 @@
 }
 #conteudo-left{
     width: 500px;
-    height: 300px;
+    height: 500px;
     float: left;
     background-color: #E59866;
 }
+
 #conteudo-right{
     width: 500px;
     height: 300px;
@@ -54,13 +55,19 @@ h3{
     color: #BD0505;
     font-weight: bolder;
 }
+h4{
+    font-size: 20px;
+    text-align: center;
+    color: darkgreen;
+    font-weight: bolder;
+
+}
 
 .num1{
     margin-left: -100px;
     font-size: 18px;
     font-weight: bold;
-    color: black;
-    
+    color: black;  
 }
 .num2{
     margin-left: -80px;
@@ -75,28 +82,36 @@ h3{
     color: black;
 }
 .num4{
-    /*margin-left: -160px;*/
     font-size: 18px;
     font-weight: bold;
     color: black;
     text-align: center;
 }
 .num5{
-    /*margin-left: -160px;*/
     font-size: 18px;
     font-weight: bold;
     color: black;
     text-align: center;
 }
 .num6{
-    /*margin-left: -160px;*/
     font-size: 18px;
     font-weight: bold;
     color: black;
     text-align: center;
 }
-p{
-    font-size: 20px;
+.num7{
+    margin-left: -100px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.num8{
+    margin-left: -180px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
 }
 
 input:hover{
@@ -128,15 +143,9 @@ button{
 .novoCalculo{
     background-color:#145A32;
 }
-/*fieldset{
-    font-size: 20px;
-    color: #057D72;
-    font:bold;
-    font-family: verdana;
-    margin-top: 20px;
-    margin-left: 10px;
-    height: 250px;
-}*/
+.novo{
+    background-color:#145A32;
+}
 
 body{
     /*background-color:#C7C4C4;*/
