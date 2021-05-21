@@ -18,7 +18,7 @@ function multiplicar(event){
     var valorNum1 = document.getElementById("num1").value;
     var valorNum2 = document.getElementById("num2").value;
     var resultado = (valorNum1 * valorNum2);
-    document.getElementById("resultado").value = resultado.toFixed(2); 
+    document.getElementById("resultado").value = resultado; 
 }
 function dividir(event){
     event.preventDefault();
@@ -60,6 +60,17 @@ function tangente(event){
     var tangente = Math.tan(Num7);
     document.getElementById("calculo").value = tangente;
 }
+//Função Analisando Triângulo
+function calcular(event){
+    event.preventDefault();
+    var n1 = document.getElementById("s1").value;
+    var n2 = document.getElementById("s2").value;
+    var n3 = document.getElementById("s3").value;
+    //Event.preventDefault()
+    //if(n1 < n2 + n3 && n2 < n1 + n3 && n3 < n1 + n2)
+         
+    
+}
 /*Limpando o campo input para usuário digitar novamente*/
 function limpar(event){
     event.preventDefault();
@@ -77,4 +88,11 @@ function novo(event){
     event.preventDefault();
     document.getElementById("num7").value ='';
     document.getElementById("calculo").value ='';
+}
+function calcularOutro(event){
+    event.preventDefault();
+    document.getElementById("s1").value ='';
+    document.getElementById("s2").value ='';
+    document.getElementById("s3").value = '';
+    document.getElementById("triangulo").value ='';
 }
