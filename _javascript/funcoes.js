@@ -60,16 +60,15 @@ function tangente(event){
     var tangente = Math.tan(Num7);
     document.getElementById("calculo").value = tangente;
 }
-//Função Analisando Triângulo
+//Função Calculando Volume
 function calcular(event){
     event.preventDefault();
-    var n1 = document.getElementById("s1").value;
-    var n2 = document.getElementById("s2").value;
-    var n3 = document.getElementById("s3").value;
-    //Event.preventDefault()
-    //if(n1 < n2 + n3 && n2 < n1 + n3 && n3 < n1 + n2)
-         
-    
+    var comp = document.getElementById("s1").value;
+    var larg = document.getElementById("s2").value;
+    var alt = document.getElementById("s3").value;
+    var volumeTotal = comp * larg * alt;
+    document.getElementById("volume").value = volumeTotal;
+       
 }
 /*Limpando o campo input para usuário digitar novamente*/
 function limpar(event){
@@ -94,5 +93,5 @@ function calcularOutro(event){
     document.getElementById("s1").value ='';
     document.getElementById("s2").value ='';
     document.getElementById("s3").value = '';
-    document.getElementById("triangulo").value ='';
+    document.getElementById("volume").value ='';
 }

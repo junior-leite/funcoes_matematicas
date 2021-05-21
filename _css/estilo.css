@@ -99,26 +99,29 @@ h2{
     color: black;
     text-align: center;
 }
-.num9{
+.s1{
+    margin-left: -50px;
     font-size: 18px;
     font-weight: bold;
     color: black;
     text-align: center;
 }
-.num10{
+.s2{
+    margin-left: -50px;
     font-size: 18px;
     font-weight: bold;
     color: black;
     text-align: center;
 }
-.num11{
+.s3{
+    margin-left: -50px;
     font-size: 18px;
     font-weight: bold;
     color: black;
     text-align: center;
 }
-.triangulo{
-    margin-left: -80px;
+.volume{
+    margin-left: -50px;
     font-size: 18px;
     font-weight: bold;
     color: black;
