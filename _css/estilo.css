@@ -161,8 +161,17 @@ button{
     background-color:#145A32;
 }
 .calcularOutro{
-    background-color:#145A32;
-    
+    background-color:#145A32;   
+}
+.p1{
+    color:black;
+    font-weight: bolder;
+    width: 600px;
+    margin-top: 0;
+    text-align: center;
+}
+.p2{
+    margin-left: 300px;
 }
 
 body{
